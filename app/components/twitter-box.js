@@ -11,11 +11,13 @@ export default class TwitterBoxComponent extends Component {
 		this.error=false;
 		this.text=value;
 	}
+
 	@action handleChange (text)
 	{	
 		console.log(text);
 		this.text= text;
 	}
+  
 	@action handleSubmit (){ 
 		let newText=this.text;
 		
